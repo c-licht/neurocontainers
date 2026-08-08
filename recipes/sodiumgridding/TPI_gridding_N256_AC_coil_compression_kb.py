@@ -43,13 +43,6 @@ FERMI_WIDTH  = 0.05 # Smaller value = sharper transition.
 MAX_SIMULTANEOUS_GRIDS = 2
 grid_semaphore = threading.Semaphore(MAX_SIMULTANEOUS_GRIDS)
 
-TRAJ_FILE = '/Users/clicht/Data_7T/23Na/Sofia_20260317/23Na_n50_trajectory.h5'
-#TRAJ_FILE = '/Users/clicht/Desktop/Python/n72_TPI_traj_new.h5'
-#TRAJ_FILE = '/Users/clicht/Desktop/Python/n28_TPI_23Na.h5'
-DATA_FILE = '/Users/clicht/Data_7T/23Na/Sofia_20260317/23Na_n50_TE50_7T_Sofia_1.h5'
-#DATA_FILE ="/Users/clicht/Data_7T/For_Chiadika/10272025/TPI_1H_TE0_14.h5"
-#DATA_FILE = '/Users/clicht/Data_3T/FIRE_sodiumNUFFT/23Na_FIRE_n28.h5'
-#DATA_FILE = "/Users/clicht/Data_7T/23Na/20260616_23Na_MESTIM_Shailja/23Na_n28_7T_Shailja_TR55_TE05.h5"
 
 def compress_coils_by_variance(coil_data, variance_retention=0.90, eps=1e-12):
     """Compress physical coils into virtual coils retaining target signal energy."""
